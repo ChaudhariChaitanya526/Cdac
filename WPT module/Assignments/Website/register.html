@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Registration Form </title>
+
+        <style>
+
+            .form-group{
+                margin-bottom: 10px;
+            }
+
+            .form-group lable{
+                display: inline-block;
+                width: 150px;
+            }
+
+            .form-group input, .form-group select{
+                width: 250px;
+            }
+
+            .left-column{
+                width: 50%;
+                float: left;
+            }
+
+
+            .right-column{
+                width: 50%;
+                float: right;
+            }
+
+            .clearfix {
+                clear: both;
+            }
+
+            .no-clear {
+                clear: none;
+            }
+
+
+            .main{
+                width: 80%;
+                margin: auto;
+            }
+
+            /* .hr{
+                margin: 1px 0; 
+            } */
+
+            #gender-group {
+                display: flex;
+                align-items: center;
+                /* background-color: blue; */
+                padding-right: 80px;
+                margin-right: 100px;
+            }
+
+            body{
+                background-image: linear-gradient(rgb(70, 93, 244), rgb(167, 167, 244));
+                
+            }
+
+            #submit{
+                margin-top: 20px;
+                margin-left: 40%;
+                /* text-align: center; */
+                margin-bottom: 10px;
+                
+            }
+
+            #sub{
+                padding: 5px;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <div class="main">
+            <section>
+                <h1> Registation Form</h1>
+                <h2> PERSONAL INFROMATION </h2>
+            </section>
+
+            <div class="form-group">
+                <lable> First name: </lable>
+                <input type="text" placeholder="Enter full name">
+                <br><br>
+            </div>
+            
+            <div class="left-column">
+                <div class="form-group">
+                    <lable> Nickname: </lable>
+                    <input type="text" placeholder="Nickname">
+
+                </div>
+
+                <div class="form-group">
+                    <lable> Data of Birth: </lable>
+                    <input type="date">
+
+                </div>
+
+                <div class="form-group">
+                    <lable> Email: </lable>
+                    <input type="email" placeholder="Email">
+
+                </div>
+
+                <div class="form-group" id="gender-group">
+                    <lable> Gender: </lable>
+                    <input type="radio" name="gender"> <lable>Male</lable>
+                    <input type="radio" name="gender"> <lable>Female</lable>
+
+                </div>
+
+                <div class="form-group">
+                    <lable>Marital Status:</lable>
+                    <input type="text">
+
+                </div>
+
+                <div class="form-group">
+                    <lable>Country:</lable>
+                    <select>
+                    <option value="101">India</option>
+                    <option value="102">Amarica</option>
+                    <option value="103">UK</option>
+                    <option value="104">Germany</option>
+                    <option value="105">Srilanka </option>
+                    </select>
+
+                </div>
+
+                <div class="form-group">
+                    <lable>National Id No:</lable>
+                    <input type="text">
+
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div class="form-group">
+                    <lable> Place Of Birth: </lable>
+                    <input type="text">
+                </div>
+
+                <div class="form-group">
+                    <lable> Nationality: </lable>
+                    <input type="text">
+                </div>
+
+                <div class="form-group">
+                    <lable> Domicile: </lable>
+                    <input type="text">
+                </div>
+
+                <div class="form-group">
+                    <lable> CP Domicile: </lable>
+                    <input type="text">
+
+                </div>
+
+                <div class="form-group">
+                    <lable> Start Time: </lable>
+                    <input type="text">
+
+                </div>
+
+                <div class="form-group">
+                    <lable> Post Code: </lable>
+                    <input type="text">
+
+                </div>
+
+                <div class="form-group">
+                    <lable> Phone: </lable>
+                    <input type="text">
+
+                </div>
+
+            </div>
+
+            <div class="clearfix"></div>
+
+            <h2>ADDRESS</h2>
+
+            <div class="no-clear"></div>
+            <div class="form-group">
+                <lable>Present Address:</lable>
+                <input type="text">
+
+            </div>
+
+            <div class="left-column">
+
+                <div class="form-group">
+                    <lable> The City: </lable>
+                    <input type="text">
+
+                </div>
+
+                <div class="form-group">
+                    <lable> Zip Code: </lable>
+                    <input type="text">
+
+                </div>
+            </div>
+
+            <div clas="right-column">
+
+                <div class="form-group">
+                    <lable> Present State: </lable>
+                    <input type="text">
+
+                </div>
+
+                <div class="form-group">
+                    <lable> Student Trustee: </lable>
+                    <input type="text">
+
+                </div>
+
+            </div>
+
+            <div id="submit">
+                <button type="submit" id="sub">Submit</button>
+            </div>
+            <div id="submit">
+                <a href="main.html">
+                    <button type="button" id="sub">Home</button>
+                </a>
+            </div>
+
+
+            <div class="left-column">
+                <h2>ADDRESS SCHOOL:</h2>
+
+                <p>A: PJ-DAC. CDAC Juhu </p>
+                <p>P: *123-456-7890</p>
+                <p>E: hellow@reallygreatsite.com</p>
+
+
+            </div>
+
+            <div class="right-column">
+
+                <p>Register Signature <br><br>Office Signature </p>
+                <!-- <hr>
+                <h4>Register Signature</h4>
+                <hr>
+                <h4>Office Signature</h4> -->
+
+                <h5>THANKYOU FOR REGISTRATION</h5>
+                <p>Addmition is comformed</p>
+            </div>
+
+        </div>
+
+    </body>
+
+</html>

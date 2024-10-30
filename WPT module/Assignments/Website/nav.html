@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Info Express</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #c7e6eb;
+            gap: 20px;
+            box-shadow: 0px 10px 20px #eeeeee;
+        }
+
+        .logo-info {
+            display: flex;
+            align-items: center;
+            gap: 10px; 
+        }
+
+        #logo {
+            width: 42px;
+            height: 42px;
+        }
+
+        #info {
+            font-size: 20px;
+            font-weight: bold;
+            color: rgb(1, 0, 0);
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            margin-right: 25px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            font-size: 20px;
+            color: rgb(1, 0, 0); 
+        }
+
+        .nav-links a:hover {
+            color: #0c46e7; 
+        }
+
+        .nav-but {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .sign-up {
+            background-color: #00b464;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .login {
+            color: #5a5a5a;
+            padding: 8px 16px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .sign-up:hover {
+            background-color: #009754; 
+        }
+
+        .login:hover {
+            background-color: #f0f0f0; 
+            border-radius: 20px;
+        }
+
+        .navbar button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+
+        .nav-link-block{
+            display: flex; 
+            align-items: center;
+        }
+
+        .intro {
+            padding: 30px;
+            text-align: center;
+        }
+
+        #description {
+            text-align: justify;
+            font-size: 18px;
+        }
+
+        h2 {
+            padding-bottom: 10px;
+        }
+
+        .element1 {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .section-1, .section-2 {
+            width: 45%;
+            margin: 10px;
+            text-align: center;
+        }
+
+        #img {
+            width: 80%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        p {
+            text-align: justify;
+            margin-left: 10px;
+        }
+
+        .main {
+            background-image: url("../icons/backimg.jpg");
+            opacity: 0.8;
+            padding: 20px;
+        }
+
+        /* Responsive styling
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .nav-but {
+                display: none;
+            }
+
+            .navbar {
+                justify-content: center;
+            }
+
+            .logo-info {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .intro, .element1 {
+                padding: 20px;
+            }
+
+            .section-1, .section-2 {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+
+        @media (max-width: 576px) {
+            #info {
+                font-size: 18px;
+            }
+
+            .intro h2 {
+                font-size: 24px;
+            }
+
+            #description {
+                font-size: 16px;
+            }
+
+            .sign-up, .login {
+                font-size: 18px;
+                padding: 6px 12px;
+            }
+
+            #logo {
+                width: 36px;
+                height: 36px;
+            }
+
+            .section-1 h3, .section-2 h3 {
+                font-size: 18px;
+            }
+        } */
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo-info">
+            <button class="b1">
+                <img src="../icons/Logo.jpg" id="logo">
+            </button>
+            <span id="info">Info Express</span>
+        </div>
+
+        <div class="nav-link-block">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="nav-but">
+                <a href="#" class="sign-up">Sign Up</a>
+                <a href="#" class="login">Log in</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="intro">
+            <h2>Welcome to Info Express - Your Journey to Knowledge Begins Here!</h2>
+            <p id="description">At Info Express, we believe that everyone deserves access to high-quality education that’s flexible, engaging, and suited to individual needs.
+                We’re more than just an educational platform; we’re a community of learners, educators, and mentors who are passionate about helping you succeed. 
+                Whether you're here to master a new skill, excel academically, or explore a new subject, our goal is to support your growth every step of the way.</p>
+        </div>
+
+        <div class="element1">
+            <div class="section-1">
+                <img src="../icons/iloveimg/interactive.jpg" id="img">
+                <h3>Interactive Learning Experience</h3>
+                <p>Dive into courses designed with interactive lessons, real-world examples, and exercises that make concepts stick. 
+                    Our goal is to keep you engaged and eager to learn by turning passive learning into an active experience. 
+                    Each topic is broken down into easy-to-understand lessons with quizzes and activities to reinforce your learning.</p>
+            </div>
+
+            <div class="section-1">
+                <img src="../icons/iloveimg/cources.jpg" id="img">
+                <h3>Courses for Every Interest and Skill Level</h3>
+                <p>Explore a vast range of subjects, from Mathematics and Science to Arts and Humanities. Our courses cater to beginners,
+                    intermediate learners, and advanced students, so you can learn at your own pace and comfort level. 
+                    Not sure where to start? Our personalized learning paths guide you through courses suited to your interests and career goals.</p>
+            </div>
+        </div>
+
+        <div class="element1">
+            <div class="section-2">
+                <img src="../icons/iloveimg/Expert.jpg" id="img">
+                <h3>Expert Instructors and Mentors</h3>
+                <p>Learn from the best in the field! Our instructors are passionate educators and professionals with real-world experience. 
+                    You’ll also have access to mentors who provide personalized guidance, helping you overcome challenges and celebrate your achievements along the way.</p>
+            </div>
+            <div class="section-2">
+                <img src="../icons/iloveimg/practical.jpg" id="img">
+                <h3>Practical Projects and Hands-On Activities</h3>
+                <p>Apply your knowledge with hands-on projects and real-world scenarios. Each course includes projects that allow you to practice and demonstrate what you’ve learned, 
+                    giving you a portfolio of skills to showcase to future employers or use in your academic career.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

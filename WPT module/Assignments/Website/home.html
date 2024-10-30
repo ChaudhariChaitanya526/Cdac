@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Info Express</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* font-family: 'Segoe UI Light'; */
+            font-family: 'Roboto';
+        }
+
+        /* body {
+            font-family: Arial, sans-serif;
+        } */
+
+        .navbar {
+            display: flex;
+            justify-content: space-between; 
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #c7e6eb;
+            gap: 20px;
+            box-shadow: 0px 10px 20px #eeeeee;
+        }
+
+        .logo-info {
+            display: flex;
+            align-items: center;
+            gap: 10px; 
+        }
+
+        #logo {
+            width: 42px;
+            height: 42px;
+        }
+
+        #info {
+            font-size: 20px;
+            font-weight: bold;
+            color: rgb(1, 0, 0);
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            margin-right: 25px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            font-size: 20px;
+            color: rgb(1, 0, 0); 
+        }
+
+        .nav-links a:hover {
+            color: #0c46e7; 
+        }
+
+        .nav-but {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .sign-up {
+            background-color: #00b464;
+            color: white;
+            padding: 8px 16px;
+            /* padding-top: 8px;
+            padding-left: 8px; */
+
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .login {
+            color: #5a5a5a;
+            padding: 8px 16px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .sign-up:hover {
+            background-color: #009754; 
+        }
+
+        .login:hover {
+            background-color: #f0f0f0; 
+            border-radius: 20px;
+        }
+
+        .navbar button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+
+        .nav-link-block{
+            display: flex; 
+            align-items: center;
+        }
+
+        .intro{
+            padding: 100px 100px;
+            text-align:  center;
+            /* font-family: Roboto; */
+            /* background-image: linear-gradient(rgb(1, 1, 129), rgb(148, 148, 235)); */
+        }
+
+        #description{
+            margin-top: 20px;
+            text-align: justify;
+            font-size: 30px;
+        }
+
+        body{
+            background-color: blue;
+            /* background-image: linear-gradient(rgb(1, 1, 129), rgb(148, 148, 235)); */
+        }
+
+        h1{
+            font-size: 35px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+
+        <div class="logo-info">
+            <button class="b1">
+                <img src="../icons/Logo.jpg" id="logo">
+            </button>
+            <span id="info">Info Express</span>
+        </div>
+
+        <div class="nav-link-block">
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="nav-but">
+                <a href="login.html" class="sign-up">Sign Up</a>
+                <a href="SignIn.html" class="login">Sign in</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="intro">
+            <h1>
+                Welcome to Info Express - Your Journey to Knowledge Begins Here! 
+            </h1>
+            <p id="description">At Info Express, we believe that everyone deserves access to high-quality education that’s flexible, engaging, and suited to individual needs.
+                We’re more than just an educational platform; we’re a community of learners, educators, and mentors who are passionate about helping you succeed. 
+                Whether you're here to master a new skill, excel academically, or explore a new subject, our goal is to support your growth every step of the way.</p>
+        </div>
+    </div>
+
+</body>
+</html>
