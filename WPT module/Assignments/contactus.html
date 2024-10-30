@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<head>
+    <title>Contact Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .main {
+            display: flex;
+            max-width: 1000px;
+            margin: 50px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-block {
+            width: 40%;
+            background-color: #4565f0;
+            color: white;
+            padding: 30px;
+            position: relative;
+            background: linear-gradient(to bottom left, #4565f0, #ff91a4);
+        }
+
+        .info-block h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .info-block .info p {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        .form {
+            width: 60%;
+            background-color: #fff;
+            padding: 50px;
+        }
+
+        .form h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group input, 
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline: none;
+        }
+
+        .form-group textarea {
+            height: 100px;
+            resize: none;
+        }
+
+        button {
+            width: 100%;
+            background-color: #4565f0;
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #3a54d4;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="info-block">
+            <h2>Get in touch</h2>
+            <div class="info">
+                <p><b>Name:</b> Info Express</p>
+                <br>
+                <p><b>Email:</b> infoexpress@gmail.com</p>
+                <br>
+                <p><b>Phone:</b> +91 1234567890</p>
+                <br>
+                <p><b>Address:</b> 123 Street, Bangalore, India, 500001</p>
+            </div>
+        </div>
+
+        <div class="form">
+            <h2>Contact Us</h2>
+            <form>
+                <div class="form-group">
+                    <input type="text" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email ID" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Website">
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Contact Number">
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Message"></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
