@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Assignment 4
+        </title>
+    </head>
+
+    <body>
+        <h1>Question5</h1>
+        <script>
+
+            const fetchData = (url, callback) => {
+                console.log(`Fetching data from ${url}...`);
+                
+                setTimeout(() => {
+                    if (isError) {
+                        const errorMessage = `Error fetching data from ${url}`;
+                        callback(errorMessage, null); 
+                    } else {
+                        const response = `Response from ${url}`; 
+                        callback(null, response); 
+                    }
+                }, 2000);
+            };
+
+            const processData = (data, callback) => {
+                console.log("Processing data...");
+
+                const processedData = data.toUpperCase();
+                callback(processedData);
+            };
+
+
+            fetchData("https://jsonplaceholder.typicode.com/posts/1", (error, response) => {
+                if (error) {
+                    console.error("Error:", error); 
+                } else {
+                    processData(response, (processedResult) => {
+                        console.log("Processed Result:", processedResult); 
+                    });
+                }
+            });
+
+        </script>
+    </body>
+</html>
