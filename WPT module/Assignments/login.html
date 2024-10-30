@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Sign Up</title>
+
+   <style>
+        *{
+            font-family: 'Arial, sans-serif';
+        }
+        #container{
+            width: 450px;
+            height: 500px;
+            text-align: center;
+            margin: 80px auto;
+            /* background: rgb(218, 126, 247); */
+            /* opacity: 0.9; */
+            margin-bottom: 160px;
+            border-radius: 15px;
+            border-style: solid;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        body{
+            background: url("Landscape.jpg") no-repeat center center fixed;
+            background-size: cover;
+        }
+        #heading{
+            padding-top: 30px;
+        }
+        input{
+            width: 70%;
+            margin-bottom: 25px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            /* margin-left: 20%;
+            margin-right: 20%; */
+            border-radius: 10px;
+        }
+
+        button{
+            width: 30%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background: white;
+            color: #EF5350;
+            border-color:#EF5350;
+            border-width: 1px;
+            border-radius: 10px;
+            border-style: solid;
+            cursor: pointer;
+            transition: background 0.4s;
+        }
+        button:hover{
+            background: #EF5350;
+            color: white;
+        }
+
+        a:link {
+            color: purple;
+        }
+
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+   </style>
+</head>
+<body>
+   <div id="container">
+      <h1 id="heading">Sign Up</h1>
+      <form>
+         <input type="text" placeholder="First Name">
+         <input type="text" placeholder="Last Name">
+         <input type="email" placeholder="Email">
+         <input type="password" placeholder="Password">
+         <button type="submit">Login</button>
+      </form>
+      <p><strong>Don't have an account?</strong><a href="#">Sign up now</a></p>
+   </div>
+</body>
+</html>
